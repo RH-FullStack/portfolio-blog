@@ -25,26 +25,40 @@ const LATEST_POSTS = getAllPosts().slice(0, 3);
 export default function Home() {
   return (
     <>
-      <Container className="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center gap-8 py-16 text-center sm:flex-row sm:gap-12 sm:text-left">
+      <section className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden">
         <Image
-          src="/hero.jpg"
-          alt={`Portrait of ${siteConfig.name}`}
-          width={200}
-          height={200}
+          src="/Background.jpg"
+          alt=""
+          fill
           priority
-          className="h-48 w-48 flex-none rounded-full object-cover sm:h-56 sm:w-56"
+          sizes="100vw"
+          className="object-cover"
         />
-        <div className="flex flex-col items-center gap-4 sm:items-start">
-          <h1 className="text-display font-semibold">{siteConfig.name}</h1>
-          <p className="text-heading font-semibold text-vermillion dark:text-vermillion-dark">
-            {siteConfig.tagline}
-          </p>
-          <p className="max-w-md text-body">{siteConfig.role}</p>
-          <Button href="/projects" variant="primary" className="mt-2">
-            View My Projects
-          </Button>
-        </div>
-      </Container>
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(22,21,15,0.55),rgba(22,21,15,0.78))]"
+        />
+        <Container className="relative flex flex-col items-center justify-center gap-8 py-16 text-center sm:flex-row sm:gap-12 sm:text-left">
+          <Image
+            src="/hero.jpg"
+            alt={`Portrait of ${siteConfig.name}`}
+            width={200}
+            height={200}
+            priority
+            className="h-48 w-48 flex-none rounded-full object-cover ring-2 ring-[rgba(245,242,234,0.9)] sm:h-56 sm:w-56"
+          />
+          <div className="flex flex-col items-center gap-4 sm:items-start">
+            <h1 className="text-display font-semibold text-ink-dark">{siteConfig.name}</h1>
+            <p className="text-heading font-semibold text-vermillion-dark">
+              {siteConfig.tagline}
+            </p>
+            <p className="max-w-md text-body text-[#d8d4c8]">{siteConfig.role}</p>
+            <Button href="/projects" variant="primary" className="mt-2">
+              View My Projects
+            </Button>
+          </div>
+        </Container>
+      </section>
 
       <Container className="py-16 sm:py-24">
         <h2 className="text-heading font-semibold">Featured Projects</h2>
