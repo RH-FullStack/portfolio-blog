@@ -67,7 +67,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 6 plans in 3 waves
 **Wave 1**
 
-- [ ] 02-01-PLAN.md — Velite content-pipeline foundation: config, next.config.mjs wiring, tsconfig alias, code-block CSS (BLOG-03, BLOG-06)
+- [x] 02-01-PLAN.md — Velite content-pipeline foundation: config, next.config.mjs wiring, tsconfig alias, code-block CSS (BLOG-03, BLOG-06)
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
