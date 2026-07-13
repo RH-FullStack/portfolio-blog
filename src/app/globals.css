@@ -42,6 +42,21 @@ body {
   color: var(--color-ink-dark);
 }
 
+/* Syntax-highlighting dual-theme (BLOG-03). rehype-pretty-code emits
+   both themes' colors as CSS vars on [data-theme] spans; we key the
+   switch off the .dark class (manual next-themes toggle), matching the
+   @custom-variant dark strategy above — NOT prefers-color-scheme. */
+code[data-theme*=" "],
+code[data-theme*=" "] span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+:where(.dark, .dark *) code[data-theme*=" "],
+:where(.dark, .dark *) code[data-theme*=" "] span {
+  color: var(--shiki-dark);
+  background-color: var(--shiki-dark-bg);
+}
+
 /* Theme cross-fade (D-13) — scoped to themed surfaces only; the blanket "all properties" form is avoided on purpose (jank guard) */
 @media (prefers-reduced-motion: no-preference) {
   body,
