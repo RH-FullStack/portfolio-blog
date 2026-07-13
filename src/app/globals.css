@@ -57,6 +57,15 @@ code[data-theme*=" "] span {
   background-color: var(--shiki-dark-bg);
 }
 
+/* Code block layout (BLOG-03) — rehype-pretty-code ships intentionally
+   unstyled; without this, long lines overflow the Prose container with no
+   horizontal scrollbar on narrow viewports. */
+pre[data-theme] {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
 /* Theme cross-fade (D-13) — scoped to themed surfaces only; the blanket "all properties" form is avoided on purpose (jank guard) */
 @media (prefers-reduced-motion: no-preference) {
   body,
