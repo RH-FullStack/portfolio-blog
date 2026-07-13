@@ -4,16 +4,23 @@ import { Card } from '@/components/ui/Card';
 import { Container } from '@/components/ui/Container';
 import { siteConfig } from '@/lib/site-config';
 import { projects } from '@/content/projects';
+import { getAllPosts } from '@/lib/posts';
+import { PostListRow } from '@/components/blog/PostListRow';
 
 const FEATURED_PROJECTS = projects.slice(0, 3);
+const LATEST_POSTS = getAllPosts().slice(0, 3);
 
 /**
- * Homepage (Server Component) — Hero + featured-projects teaser (D-07).
+ * Homepage (Server Component) — Hero + featured-projects teaser (D-07) +
+ * latest-writing teaser (D-15..D-18).
  * Hero proves the walking skeleton: scaffold -> routing -> self-hosted
  * fonts -> design tokens -> typed data read -> one real client UI
- * interaction (the theme toggle in the layout). The teaser below reuses
- * the same typed `projects` data source that feeds the full `/projects`
- * index (PROJ-01) — one source, two views.
+ * interaction (the theme toggle in the layout). The featured-projects
+ * teaser reuses the same typed `projects` data source that feeds the full
+ * `/projects` index (PROJ-01) — one source, two views. The latest-writing
+ * teaser below it reuses `getAllPosts()` (draft-safe, BLOG-01) with the
+ * compact `PostListRow` variant — Projects keeps sole ownership of the
+ * card treatment; the homepage never stacks two card grids.
  */
 export default function Home() {
   return (
@@ -49,6 +56,20 @@ export default function Home() {
         <div className="mt-12 flex justify-center sm:justify-start">
           <Button href="/projects" variant="secondary">
             View all projects
+          </Button>
+        </div>
+      </Container>
+
+      <Container className="py-16 sm:py-24">
+        <h2 className="text-heading font-semibold">Latest Writing</h2>
+        <div className="mt-12">
+          {LATEST_POSTS.map((post) => (
+            <PostListRow key={post.slug} post={post} compact />
+          ))}
+        </div>
+        <div className="mt-12 flex justify-center sm:justify-start">
+          <Button href="/blog" variant="secondary">
+            View all posts
           </Button>
         </div>
       </Container>
