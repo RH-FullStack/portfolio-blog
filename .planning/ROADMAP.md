@@ -40,9 +40,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
-- [ ] 01-02-PLAN.md — Site chrome: header nav, accessible mobile nav, fuller footer (Wave 2)
-- [ ] 01-03-PLAN.md — Projects showcase + homepage featured-projects teaser (Wave 2)
-- [ ] 01-04-PLAN.md — About, Contact, and custom 404 pages (Wave 2)
+- [x] 01-02-PLAN.md — Site chrome: header nav, accessible mobile nav, fuller footer (Wave 2)
+- [x] 01-03-PLAN.md — Projects showcase + homepage featured-projects teaser (Wave 2)
+- [x] 01-04-PLAN.md — About, Contact, and custom 404 pages (Wave 2)
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
@@ -91,6 +91,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|-----------------|--------|-----------|
-| 1. Core Site & Design System | 1/5 | In Progress|  |
+| 1. Core Site & Design System | 4/5 | In Progress|  |
 | 2. Blog & Content System | 0/TBD | Not started | - |
 | 3. SEO Foundation & Launch | 0/TBD | Not started | - |
