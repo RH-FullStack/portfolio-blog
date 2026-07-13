@@ -66,6 +66,43 @@ pre[data-theme] {
   padding: 1rem;
 }
 
+/* Heading anchor links (D-13) — appended after heading text via
+   rehype-autolink-headings (see velite.config.ts). Subtle by default,
+   vermillion accent on hover/focus, 44x44 minimum touch target achieved via
+   padding rather than inflating the visible glyph (matches Button.tsx's
+   iconOnly convention). */
+.heading-anchor {
+  display: inline-flex;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-inline-start: 0.5rem;
+  vertical-align: middle;
+  font-size: var(--text-label);
+  line-height: var(--text-label--line-height);
+  color: rgb(28 27 24 / 40%);
+  text-decoration: none;
+}
+.heading-anchor:hover,
+.heading-anchor:focus-visible {
+  color: var(--color-vermillion);
+}
+.heading-anchor:focus-visible {
+  outline: 2px solid var(--color-vermillion);
+  outline-offset: 2px;
+}
+:where(.dark, .dark *) .heading-anchor {
+  color: rgb(245 242 234 / 40%);
+}
+:where(.dark, .dark *) .heading-anchor:hover,
+:where(.dark, .dark *) .heading-anchor:focus-visible {
+  color: var(--color-vermillion-dark);
+}
+:where(.dark, .dark *) .heading-anchor:focus-visible {
+  outline-color: var(--color-vermillion-dark);
+}
+
 /* Theme cross-fade (D-13) — scoped to themed surfaces only; the blanket "all properties" form is avoided on purpose (jank guard) */
 @media (prefers-reduced-motion: no-preference) {
   body,

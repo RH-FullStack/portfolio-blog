@@ -36,7 +36,22 @@ export default defineConfig({
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
       rehypeSlug,
-      rehypeAutolinkHeadings,
+      // D-13: default behavior renders an aria-hidden, tabIndex=-1, CSS-only
+      // "icon" span — invisible and keyboard-unreachable (WR-03). Append a
+      // visible "#" glyph after the heading text instead, reachable via
+      // keyboard and with an explicit accessible name; styled in globals.css
+      // (`.heading-anchor`).
+      [
+        rehypeAutolinkHeadings,
+        {
+          behavior: 'append',
+          properties: {
+            className: ['heading-anchor'],
+            ariaLabel: 'Link to this heading',
+          },
+          content: { type: 'text', value: '#' },
+        },
+      ],
       [rehypePrettyCode, { theme: { light: 'github-light', dark: 'github-dark' } }],
     ],
   },
