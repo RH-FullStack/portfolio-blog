@@ -77,8 +77,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
-- [ ] 02-05-PLAN.md — Blog routes: index, post page (MDX + related), per-tag archive (BLOG-01, BLOG-02, BLOG-03, BLOG-04, BLOG-05)
-- [ ] 02-06-PLAN.md — Homepage latest-writing teaser (BLOG-01, D-15..D-18)
+- [x] 02-05-PLAN.md — Blog routes: index, post page (MDX + related), per-tag archive (BLOG-01, BLOG-02, BLOG-03, BLOG-04, BLOG-05)
+- [x] 02-06-PLAN.md — Homepage latest-writing teaser (BLOG-01, D-15..D-18)
 
 **UI hint**: yes
 **Research flag**: research/SUMMARY.md flags this phase's content layer (Velite's Next.js wiring — next.config.mjs integration, MDX component override conventions) as needing a deeper research pass during planning, ahead of writing real posts. Also confirm during planning that Velite (not the gray-matter + next-mdx-remote pattern shown in ARCHITECTURE.md examples) is the implementation used end-to-end, per STACK.md's explicit recommendation. RESOLVED in 02-RESEARCH.md: Velite 0.4.0 end-to-end via `next.config.mjs` top-level-await (Turbopack-safe), `s.metadata()` for reading time (reading-time package dropped), `.dark`-class-scoped syntax-highlighting CSS.
