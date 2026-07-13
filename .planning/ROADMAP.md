@@ -29,7 +29,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Visitor browses a curated showcase of 3-5 projects, each with a description, tech stack tags, and links (live demo / code)
   4. Visitor reaches Rasmus via a Contact page with a mailto link and social profile links (GitHub, LinkedIn, etc.)
   5. Site is fully responsive (mobile/tablet/desktop), respects system dark/light preference, follows baseline accessibility practices (semantic HTML, keyboard nav, alt text), looks distinctive rather than template-generic, and shows a custom 404 page on non-existent routes
-**Plans**: TBD
+**Plans**: 5 plans (Walking Skeleton phase — produces SKELETON.md)
+Plans:
+- [ ] 01-01-PLAN.md — Walking Skeleton: scaffold, design tokens, theme system, live home hero (Wave 1)
+- [ ] 01-02-PLAN.md — Site chrome: header nav, accessible mobile nav, fuller footer (Wave 2)
+- [ ] 01-03-PLAN.md — Projects showcase + homepage featured-projects teaser (Wave 2)
+- [ ] 01-04-PLAN.md — About, Contact, and custom 404 pages (Wave 2)
+- [ ] 01-05-PLAN.md — Phase verification checkpoint: visual, responsive, theme, accessibility (Wave 3)
 **UI hint**: yes
 
 ### Phase 2: Blog & Content System
@@ -67,6 +73,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|-----------------|--------|-----------|
-| 1. Core Site & Design System | 0/TBD | Not started | - |
+| 1. Core Site & Design System | 0/5 | Planned | - |
 | 2. Blog & Content System | 0/TBD | Not started | - |
 | 3. SEO Foundation & Launch | 0/TBD | Not started | - |
