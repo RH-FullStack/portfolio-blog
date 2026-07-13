@@ -68,7 +68,9 @@ Applied this phase:
 | Related-post / homepage-teaser row (compact: title + date, D-07/D-17) | Title: `text-body font-semibold` (16px/600 via Tailwind's existing 400/600 weight pair) · Date: `text-label` (14px) | Deliberately smaller than the full-index row title — these rows are secondary to the article/homepage they sit within, never competing with the primary content's hierarchy |
 | Post body prose (MDX-rendered content) | `text-body` (16px/400/1.6) via existing `Prose` component | BLOG-02 — no new typography, `Prose` already built for this in Phase 1 |
 | Code blocks (`rehype-pretty-code` output) | `--font-mono`, `text-label` (14px) size for code text | Slightly smaller than body text, standard convention for code blocks; monospace differentiates from prose without a new size token |
-| Heading-anchor link glyph (D-13) | `text-label` (14px), `text-ink/40` default, `text-vermillion` on hover/focus | Subtle by default (doesn't compete with the heading), reveals accent color only on interaction |
+| Heading-anchor link glyph (D-13) | `text-label` (14px), `text-ink/40` default, `text-vermillion` on hover/focus | Subtle by default (doesn't compete with the heading), reveals accent color only on interaction. Icon-only interactive element — MUST carry `aria-label="Link to this heading"` (configured via `rehype-autolink-headings`' `properties` option) so screen readers get an accessible name |
+
+**Primary focal point per screen:** on `/blog` the focal point is the first post row's title (the D-01 "large clickable title" at 28px/600 — nothing else on the screen competes with it); on `/blog/[slug]` it is the post H1; on `/blog/tags/[tag]` it is the archive H1.
 
 ---
 
