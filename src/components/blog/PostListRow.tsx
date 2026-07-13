@@ -25,7 +25,7 @@ export function PostListRow({ post, compact = false }: PostListRowProps) {
     <div className="border-t border-ink/10 py-6 dark:border-ink-dark/10">
       <Link
         href={`/blog/${slug}`}
-        className={`${compact ? 'text-body' : 'text-heading'} font-semibold hover:text-vermillion focus-visible:text-vermillion dark:hover:text-vermillion-dark dark:focus-visible:text-vermillion-dark`}
+        className={`${compact ? 'text-body' : 'text-heading'} font-semibold hover:text-vermillion focus-visible:text-vermillion focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vermillion dark:hover:text-vermillion-dark dark:focus-visible:text-vermillion-dark dark:focus-visible:outline-vermillion-dark`}
       >
         {title}
       </Link>

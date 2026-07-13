@@ -26,7 +26,7 @@ export function Tag({ children, href, className = '' }: TagProps) {
     return (
       <Link
         href={href}
-        className={`${classes} hover:text-vermillion focus-visible:text-vermillion dark:hover:text-vermillion-dark dark:focus-visible:text-vermillion-dark`}
+        className={`${classes} hover:text-vermillion focus-visible:text-vermillion focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-vermillion dark:hover:text-vermillion-dark dark:focus-visible:text-vermillion-dark dark:focus-visible:outline-vermillion-dark`}
       >
         {children}
       </Link>
