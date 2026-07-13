@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-07-10)
 Phase: 02 (blog-content-system) — EXECUTING
 Plan: 1 of 6
 Status: Executing Phase 02
-Last activity: 2026-07-13 -- Phase 02 execution started
+Last activity: 2026-07-13 -- Phase 02 executed (awaiting human UAT approval); quick task 260713-wam (atmospheric hero) completed
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -72,8 +72,14 @@ None yet.
 
 ### Blockers/Concerns
 
-- Phase 2 (Blog & Content System): research flags Velite's Next.js wiring (next.config.mjs integration, MDX component overrides) as needing a deeper research pass during planning — see ROADMAP.md Phase 2 "Research flag" note.
+- Phase 2 (Blog & Content System): research flags Velite's Next.js wiring (next.config.mjs integration, MDX component overrides) as needing a deeper research pass during planning — see ROADMAP.md Phase 2 "Research flag" note. (Resolved during Phase 2 planning/execution — Velite wired via next.config.mjs top-level await.)
 - Watch for the "project never ships" perfectionism pitfall noted in research/SUMMARY.md — v1 scope is frozen to REQUIREMENTS.md's Active list.
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260713-wam | Atmospheric hero: full-bleed Background.jpg with dark ink dim overlay (approved spec) | 2026-07-13 | b4f5031 | [260713-wam-implement-approved-atmospheric-hero-desi](./quick/260713-wam-implement-approved-atmospheric-hero-desi/) |
 
 ## Deferred Items
 
