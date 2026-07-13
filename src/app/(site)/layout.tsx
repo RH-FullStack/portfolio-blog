@@ -1,28 +1,18 @@
-import Link from 'next/link';
-import { ThemeToggle } from '@/components/theme/ThemeToggle';
-import { Container } from '@/components/ui/Container';
-import { siteConfig } from '@/lib/site-config';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
 
 /**
- * Minimal site shell shared by all chrome-wrapped pages: a sticky header
- * whose wordmark doubles as the home link (D-09), plus the theme toggle.
- * Full nav (About/Projects/Blog/Contact) and footer land in plan 01-02.
+ * Full site shell shared by all chrome-wrapped pages: sticky `Header`
+ * (wordmark+monogram home link, desktop nav, theme toggle, mobile nav
+ * trigger) and the fuller `Footer` (secondary nav, social icons, copyright,
+ * tagline) wrap every page's content.
  */
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <header
-        data-themed
-        className="sticky top-0 z-40 border-b border-secondary bg-paper/90 backdrop-blur dark:border-secondary-dark dark:bg-paper-dark/90"
-      >
-        <Container className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-label font-semibold">
-            {siteConfig.name}
-          </Link>
-          <ThemeToggle />
-        </Container>
-      </header>
+      <Header />
       <main>{children}</main>
+      <Footer />
     </>
   );
 }
