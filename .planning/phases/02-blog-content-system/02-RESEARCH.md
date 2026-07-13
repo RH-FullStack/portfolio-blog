@@ -504,14 +504,14 @@ See Pattern 4 above.
 
 **If this table is empty:** N/A — see entries above; all other claims in this document are `[VERIFIED]` via Context7, `npm view`, or WebSearch cross-referenced against Velite's/rehype-autolink-headings' official docs.
 
-## Open Questions
+## Open Questions (RESOLVED)
 
-1. **Does the Vercel build container's Node.js version support native top-level await in `.ts` config files?**
+1. **[RESOLVED — moot] Does the Vercel build container's Node.js version support native top-level await in `.ts` config files?**
    - What we know: This project's local dev Node is v24.13.0 (comfortably above the v22.18 threshold WebSearch surfaced). Vercel's default Node version for new projects is generally current-LTS-or-newer.
    - What's unclear: Whether Vercel's actual build image at deploy time matches or exceeds that threshold, and whether Next.js's `.ts` config loader path has fully resolved vercel/next.js#67765 as of Next 16.2.10.
    - Recommendation: Moot for this plan — recommendation is to use `next.config.mjs` (Pattern 1), which works correctly regardless of this open question. Revisit only if there's a strong reason to keep `.ts` config typing later.
 
-2. **Does `context().file.path` include the leading collection folder name (`posts/`) or is it collection-relative already (bare `my-post.mdx`)?**
+2. **[RESOLVED — operationalized by Plan 02-01 Task 2's slug spike] Does `context().file.path` include the leading collection folder name (`posts/`) or is it collection-relative already (bare `my-post.mdx`)?**
    - What we know: Velite's own example output for `s.path()` shows `'posts/2021-01-01-hello-world'` — i.e., includes the collection subfolder.
    - What's unclear: Whether `context().file.path` (used directly, not via `s.path()`) returns the same collection-prefixed value or something else (e.g., a root-relative or absolute path).
    - Recommendation: Verify with a one-line `console.log(context().file.path)` during the first Wave 0 spike before finalizing the slug transform (ties to Assumption A1).

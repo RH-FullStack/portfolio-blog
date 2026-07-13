@@ -64,9 +64,24 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Visitor sees related posts (by shared tags) at the end of a blog post
   5. Rasmus publishes a new post by writing an MDX file with frontmatter and running `git push`, with no manual boilerplate required per post
 
-**Plans**: TBD
+**Plans**: 6 plans in 3 waves
+**Wave 1**
+
+- [ ] 02-01-PLAN.md — Velite content-pipeline foundation: config, next.config.mjs wiring, tsconfig alias, code-block CSS (BLOG-03, BLOG-06)
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
+- [ ] 02-02-PLAN.md — Query & related-posts ranking layer: lib/posts.ts + lib/related-posts.ts (BLOG-04, BLOG-05)
+- [ ] 02-03-PLAN.md — MDX renderer + presentational primitives: linkable Tag, MDXContent, PostListRow (BLOG-02)
+- [ ] 02-04-PLAN.md — Launch content authoring: 2-3 real MDX posts + Rasmus approval checkpoint (BLOG-06, D-14)
+
+**Wave 3** *(blocked on Wave 2 completion)*
+
+- [ ] 02-05-PLAN.md — Blog routes: index, post page (MDX + related), per-tag archive (BLOG-01, BLOG-02, BLOG-03, BLOG-04, BLOG-05)
+- [ ] 02-06-PLAN.md — Homepage latest-writing teaser (BLOG-01, D-15..D-18)
+
 **UI hint**: yes
-**Research flag**: research/SUMMARY.md flags this phase's content layer (Velite's Next.js wiring — next.config.mjs integration, MDX component override conventions) as needing a deeper research pass during planning, ahead of writing real posts. Also confirm during planning that Velite (not the gray-matter + next-mdx-remote pattern shown in ARCHITECTURE.md examples) is the implementation used end-to-end, per STACK.md's explicit recommendation.
+**Research flag**: research/SUMMARY.md flags this phase's content layer (Velite's Next.js wiring — next.config.mjs integration, MDX component override conventions) as needing a deeper research pass during planning, ahead of writing real posts. Also confirm during planning that Velite (not the gray-matter + next-mdx-remote pattern shown in ARCHITECTURE.md examples) is the implementation used end-to-end, per STACK.md's explicit recommendation. RESOLVED in 02-RESEARCH.md: Velite 0.4.0 end-to-end via `next.config.mjs` top-level-await (Turbopack-safe), `s.metadata()` for reading time (reading-time package dropped), `.dark`-class-scoped syntax-highlighting CSS.
 
 ### Phase 3: SEO Foundation & Launch
 
@@ -92,5 +107,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|-----------------|--------|-----------|
 | 1. Core Site & Design System | 4/5 | In Progress|  |
-| 2. Blog & Content System | 0/TBD | Not started | - |
+| 2. Blog & Content System | 0/6 | Planned | - |
 | 3. SEO Foundation & Launch | 0/TBD | Not started | - |
