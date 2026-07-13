@@ -73,7 +73,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] 02-02-PLAN.md — Query & related-posts ranking layer: lib/posts.ts + lib/related-posts.ts (BLOG-04, BLOG-05)
 - [x] 02-03-PLAN.md — MDX renderer + presentational primitives: linkable Tag, MDXContent, PostListRow (BLOG-02)
-- [ ] 02-04-PLAN.md — Launch content authoring: 2-3 real MDX posts + Rasmus approval checkpoint (BLOG-06, D-14)
+- [x] 02-04-PLAN.md — Launch content authoring: 2-3 real MDX posts + Rasmus approval checkpoint (BLOG-06, D-14)
 
 **Wave 3** *(blocked on Wave 2 completion)*
 
