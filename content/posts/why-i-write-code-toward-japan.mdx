@@ -1,0 +1,40 @@
+---
+title: "Why I Write Code Toward Japan"
+date: "2026-07-10"
+tags: ["software", "entrepreneurship", "japan"]
+excerpt: "Every side project I ship is a rep toward one specific outcome: being able to work from Japan part of the year. Here's how I actually decide what's worth building."
+draft: true
+---
+
+I don't build side projects for the resume line. I build them because each one is a small, testable bet on a specific outcome: being able to spend part of every year living and working from Japan. That framing changes which projects I finish and which ones I quietly let die in a half-committed branch.
+
+Most developer side projects fail for a boring reason — they never had a filter for "is this worth finishing," so everything competes for attention equally. Mine has one filter now, and it's blunt: does shipping this move the Japan plan forward, either by teaching me something I need or by generating income that funds it directly? If the honest answer is no, I let it go without guilt.
+
+## The filter, as code
+
+I actually keep this as a literal checklist I run a new project idea through before committing real time to it. It's not clever, but it's saved me from a dozen half-finished repos:
+
+```ts
+type ProjectIdea = {
+  name: string
+  teachesSkillINeed: boolean
+  hasPathToRevenue: boolean
+  canShipMvpInWeeks: number
+}
+
+function isWorthBuilding(idea: ProjectIdea): boolean {
+  const learnsOrEarns = idea.teachesSkillINeed || idea.hasPathToRevenue
+  const shipsFast = idea.canShipMvpInWeeks <= 6
+  return learnsOrEarns && shipsFast
+}
+```
+
+If an idea can't clear both bars — it either has to teach me something on the critical path or have a real shot at revenue, and it has to be shippable as a small MVP in a matter of weeks, not months — it doesn't get a repo. This site is itself a product of that filter: it teaches me the current Next.js/Velite stack I want fluency in, and it's the platform everything else — the writing, the eventual SaaS attempts — gets distributed from.
+
+## Entrepreneurship as compounding, not a lottery ticket
+
+I used to think of "building a SaaS on the side" as a lottery ticket — one big idea that either hits or doesn't. That framing made every project feel like it had to be The One, which made starting anything feel enormous. What actually works better is treating each shipped project as a compounding rep, the same way a single contribution to an investment account is small on its own but meaningful over a decade. A small tool that earns a little, or teaches me a skill I use in the next project, is a win even if it never becomes a real business.
+
+## The trip that makes this concrete
+
+None of this is abstract to me anymore, because I've already stood in a dojo in Japan for an aikido seminar and felt what "living part of the year there" would actually be like, day to day. That trip is the reference point every project gets measured against now. Does this shipped feature, this closed client, this small recurring revenue line, move that day closer? If yes, it was worth the sprint. If I can't answer that clearly, I've learned to treat that as the answer itself.
