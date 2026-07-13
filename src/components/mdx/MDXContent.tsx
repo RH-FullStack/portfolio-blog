@@ -8,7 +8,7 @@ import * as runtime from 'react/jsx-runtime';
 
 const sharedComponents = {};
 
-function useMDXComponent(code: string) {
+function compileMdxComponent(code: string) {
   const fn = new Function(code);
   return fn({ ...runtime }).default;
 }
@@ -20,6 +20,11 @@ export function MDXContent({
   code: string;
   components?: Record<string, React.ComponentType>;
 }) {
-  const Component = useMDXComponent(code);
+  const Component = compileMdxComponent(code);
+  // MDXContent is a Server Component rendered once per request (never
+  // re-rendered client-side), so the "component identity resets across
+  // renders" hazard this rule guards against does not apply here (see
+  // 02-REVIEW.md WR-01).
+  // eslint-disable-next-line react-hooks/static-components
   return <Component components={{ ...sharedComponents, ...components }} />;
 }
