@@ -12,7 +12,9 @@ export type Project = {
   summary: string;
   tags: string[];
   links: { demo?: string; code?: string };
-  image: { src: string; alt: string };
+  // Optional: real project screenshots are supplied by Rasmus before deploy
+  // (see phase 03 pre-deploy checklist). Absent → Card renders a token placeholder.
+  image?: { src: string; alt: string };
 };
 
 export const projects: Project[] = [
@@ -23,7 +25,7 @@ export const projects: Project[] = [
       'This site — a hand-crafted Next.js portfolio and blog documenting a developer, entrepreneur, and aikidoka journey toward a life split between Denmark and Japan.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     links: { code: 'https://github.com/REPLACE_ME/rasmusos' },
-    image: { src: '/projects/rasmusos.png', alt: 'Screenshot of the RasmusOS homepage hero' },
+    // image: screenshot of the RasmusOS homepage hero (add rasmusos.png under public's projects dir + restore this field)
   },
   {
     slug: 'portfolio-tracker',
@@ -35,10 +37,7 @@ export const projects: Project[] = [
       demo: 'https://example.com/portfolio-tracker',
       code: 'https://github.com/REPLACE_ME/portfolio-tracker',
     },
-    image: {
-      src: '/projects/portfolio-tracker.png',
-      alt: 'Screenshot of the Portfolio Tracker dashboard showing asset allocation charts',
-    },
+    // image: screenshot of the Portfolio Tracker dashboard showing asset allocation charts (add portfolio-tracker.png under public's projects dir + restore this field)
   },
   {
     slug: 'dojo-scheduler',
@@ -50,10 +49,7 @@ export const projects: Project[] = [
       demo: 'https://example.com/dojo-scheduler',
       code: 'https://github.com/REPLACE_ME/dojo-scheduler',
     },
-    image: {
-      src: '/projects/dojo-scheduler.png',
-      alt: 'Screenshot of the Dojo Scheduler weekly class calendar',
-    },
+    // image: screenshot of the Dojo Scheduler weekly class calendar (add dojo-scheduler.png under public's projects dir + restore this field)
   },
   {
     slug: 'devnotes-cli',
@@ -62,6 +58,6 @@ export const projects: Project[] = [
       'An open-source command-line journal for capturing daily engineering notes straight from the terminal, synced to a git repo.',
     tags: ['Rust', 'CLI', 'Open Source'],
     links: { code: 'https://github.com/REPLACE_ME/devnotes-cli' },
-    image: { src: '/projects/devnotes-cli.png', alt: 'Terminal screenshot of devnotes-cli in use' },
+    // image: terminal screenshot of devnotes-cli in use (add devnotes-cli.png under public's projects dir + restore this field)
   },
 ];
