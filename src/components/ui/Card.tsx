@@ -28,6 +28,8 @@ export function Card({ project }: CardProps) {
         {image ? (
           <Image src={image.src} alt={image.alt} fill className="object-cover" />
         ) : (
+          // Token-based placeholder: no screenshot yet, so render a paper
+          // background + enso monogram instead of firing a broken image request.
           <div
             aria-hidden
             className="flex h-full w-full items-center justify-center bg-paper dark:bg-paper-dark"
