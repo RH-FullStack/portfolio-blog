@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
 import { Container } from '@/components/ui/Container';
 import { Prose } from '@/components/ui/Prose';
 import { siteConfig } from '@/lib/site-config';
+
+export const metadata: Metadata = {
+  title: 'About',
+  description:
+    'The story behind Rasmus Hansen — how software development, aikido, and long-term investing braid into one path toward a life split between Denmark and Japan.',
+};
 
 /**
  * About page (Server Component) — the developer, aikidoka, and long-term

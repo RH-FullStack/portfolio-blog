@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  description: "The page you're looking for doesn't exist or has moved.",
+};
 
 /**
  * Custom 404 (root-level Server Component) — lives at `src/app/not-found.tsx`
