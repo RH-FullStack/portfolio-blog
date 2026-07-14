@@ -17,9 +17,9 @@ export const siteConfig = {
     { href: '/contact', label: 'Contact' },
   ],
   social: {
-    github: 'https://github.com/REPLACE_ME',
-    linkedin: 'https://linkedin.com/in/REPLACE_ME',
-    email: 'REPLACE_ME@example.com',
+    github: 'https://github.com/RH-FullStack',
+    linkedin: 'https://linkedin.com/in/rasmus-frydenlund-hansen/',
+    email: 'Rasmusfrydenlund@hotmail.com',
   },
 } as const;
 
