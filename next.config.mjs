@@ -9,4 +9,9 @@ if (!process.env.VELITE_STARTED && (isDev || isBuild)) {
 }
 
 /** @type {import('next').NextConfig} */
-export default {}
+export default {
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    qualities: [55, 65, 70, 75],
+  },
+};
