@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Container } from '@/components/ui/Container';
 import { PostListRow } from '@/components/blog/PostListRow';
@@ -16,6 +17,18 @@ export function generateStaticParams() {
 }
 
 export const dynamicParams = false;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ tag: string }>;
+}): Promise<Metadata> {
+  const { tag } = await params;
+  return {
+    title: `Posts tagged "${tag}"`,
+    description: `Posts tagged "${tag}" — writing on software, aikido, and long-term investing.`,
+  };
+}
 
 export default async function TagArchivePage({
   params,

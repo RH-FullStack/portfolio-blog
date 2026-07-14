@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
 import { Card } from '@/components/ui/Card';
 import { Container } from '@/components/ui/Container';
 import { projects } from '@/content/projects';
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description:
+    'A curated selection of software projects by Rasmus Hansen — web apps, tools, and experiments built with Next.js and TypeScript, with a focus on craft.',
+};
 
 /**
  * Projects index (PROJ-01) — Server Component, static typed data read.

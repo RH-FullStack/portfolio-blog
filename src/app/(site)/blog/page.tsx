@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
 import { Container } from '@/components/ui/Container';
 import { PostListRow } from '@/components/blog/PostListRow';
 import { getAllPosts } from '@/lib/posts';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description:
+    'Writing by Rasmus Hansen on software development, aikido, long-term investing, and the craft of building things that last.',
+};
 
 /**
  * Blog index (BLOG-01, D-01) — Server Component, static build-time read.

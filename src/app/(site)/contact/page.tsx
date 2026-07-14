@@ -1,8 +1,15 @@
+import type { Metadata } from 'next';
 import { Mail } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { GithubIcon, LinkedinIcon } from '@/components/ui/SocialIcons';
 import { siteConfig } from '@/lib/site-config';
+
+export const metadata: Metadata = {
+  title: 'Contact',
+  description:
+    'Get in touch with Rasmus Hansen — email and social links for work, collaboration, or a conversation about code, aikido, or investing.',
+};
 
 /**
  * Contact page (Server Component) — mailto "Email Me" CTA PLUS the
