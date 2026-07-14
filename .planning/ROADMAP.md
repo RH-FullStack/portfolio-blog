@@ -97,7 +97,23 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Site meets good Core Web Vitals / Lighthouse performance scores, with images optimized via next/image
   5. Site is live and publicly reachable on Vercel's free Hobby tier (vercel.app subdomain)
 
-**Plans**: TBD
+**Plans**: 7 plans in 3 waves
+
+**Wave 1** *(parallel — disjoint file ownership)*
+
+- [ ] 03-01-PLAN.md — Page metadata wiring: root title template + inner-page metadata + dynamic generateMetadata (SEO-01)
+- [ ] 03-02-PLAN.md — SEO route files: build-time OG image + sitemap.ts + robots.ts (SEO-02, SEO-03)
+- [ ] 03-03-PLAN.md — Favicon set from the enso monogram: icon.svg + apple-icon.png + favicon.ico (SEO-01)
+- [ ] 03-04-PLAN.md — Image optimization config + homepage LCP tuning + backup-asset relocation (SEO-01, SEO-04)
+- [ ] 03-05-PLAN.md — Project-card image rendering fix (graceful placeholder, launch-blocker 400s) (SEO-04)
+
+**Wave 2** *(blocked on Wave 1)*
+
+- [ ] 03-06-PLAN.md — Lighthouse 90+ verification gate against the production build (SEO-04)
+
+**Wave 3** *(blocked on Wave 2)*
+
+- [ ] 03-07-PLAN.md — Pre-deploy checklist + HARD GATE deploy checkpoint (autonomous: false) (DEPL-01)
 
 ## Progress
 
@@ -108,4 +124,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|-----------------|--------|-----------|
 | 1. Core Site & Design System | 4/5 | In Progress|  |
 | 2. Blog & Content System | 0/6 | Planned | - |
-| 3. SEO Foundation & Launch | 0/TBD | Not started | - |
+| 3. SEO Foundation & Launch | 0/7 | Planned | - |
