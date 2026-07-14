@@ -109,7 +109,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 **Wave 2** *(blocked on Wave 1)*
 
-- [ ] 03-06-PLAN.md — Lighthouse 90+ verification gate against the production build (SEO-04)
+- [x] 03-06-PLAN.md — Lighthouse 90+ verification gate against the production build (SEO-04)
 
 **Wave 3** *(blocked on Wave 2)*
 
@@ -124,4 +124,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|-----------------|--------|-----------|
 | 1. Core Site & Design System | 4/5 | In Progress|  |
 | 2. Blog & Content System | 0/6 | Planned | - |
-| 3. SEO Foundation & Launch | 5/7 | In Progress|  |
+| 3. SEO Foundation & Launch | 6/7 | In Progress|  |
