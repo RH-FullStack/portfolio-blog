@@ -30,8 +30,8 @@ Requirements for initial release. Each maps to roadmap phases.
 ### SEO & Performance
 
 - [ ] **SEO-01**: Every page/post has accurate meta tags (title, description) and a favicon
-- [ ] **SEO-02**: Site generates a sitemap.xml and robots.txt
-- [ ] **SEO-03**: Pages have Open Graph images (static is acceptable for v1) for link previews
+- [x] **SEO-02**: Site generates a sitemap.xml and robots.txt
+- [x] **SEO-03**: Pages have Open Graph images (static is acceptable for v1) for link previews
 - [ ] **SEO-04**: Site meets good Core Web Vitals / Lighthouse performance scores (fast load, optimized images via next/image)
 
 ### Design & Accessibility
@@ -111,8 +111,8 @@ Which phases cover which requirements. Populated during roadmap creation.
 | BLOG-05 | Phase 2 | Pending |
 | BLOG-06 | Phase 2 | Pending |
 | SEO-01 | Phase 3 | Pending |
-| SEO-02 | Phase 3 | Pending |
-| SEO-03 | Phase 3 | Pending |
+| SEO-02 | Phase 3 | Complete |
+| SEO-03 | Phase 3 | Complete |
 | SEO-04 | Phase 3 | Pending |
 | DSGN-01 | Phase 1 | Pending |
 | DSGN-02 | Phase 1 | Pending |
