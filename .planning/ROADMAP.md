@@ -101,11 +101,11 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 **Wave 1** *(parallel — disjoint file ownership)*
 
-- [ ] 03-01-PLAN.md — Page metadata wiring: root title template + inner-page metadata + dynamic generateMetadata (SEO-01)
-- [ ] 03-02-PLAN.md — SEO route files: build-time OG image + sitemap.ts + robots.ts (SEO-02, SEO-03)
-- [ ] 03-03-PLAN.md — Favicon set from the enso monogram: icon.svg + apple-icon.png + favicon.ico (SEO-01)
-- [ ] 03-04-PLAN.md — Image optimization config + homepage LCP tuning + backup-asset relocation (SEO-01, SEO-04)
-- [ ] 03-05-PLAN.md — Project-card image rendering fix (graceful placeholder, launch-blocker 400s) (SEO-04)
+- [x] 03-01-PLAN.md — Page metadata wiring: root title template + inner-page metadata + dynamic generateMetadata (SEO-01)
+- [x] 03-02-PLAN.md — SEO route files: build-time OG image + sitemap.ts + robots.ts (SEO-02, SEO-03)
+- [x] 03-03-PLAN.md — Favicon set from the enso monogram: icon.svg + apple-icon.png + favicon.ico (SEO-01)
+- [x] 03-04-PLAN.md — Image optimization config + homepage LCP tuning + backup-asset relocation (SEO-01, SEO-04)
+- [x] 03-05-PLAN.md — Project-card image rendering fix (graceful placeholder, launch-blocker 400s) (SEO-04)
 
 **Wave 2** *(blocked on Wave 1)*
 
@@ -124,4 +124,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|-----------------|--------|-----------|
 | 1. Core Site & Design System | 4/5 | In Progress|  |
 | 2. Blog & Content System | 0/6 | Planned | - |
-| 3. SEO Foundation & Launch | 0/7 | Planned | - |
+| 3. SEO Foundation & Launch | 5/7 | In Progress|  |
