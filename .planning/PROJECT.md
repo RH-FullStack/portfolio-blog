@@ -12,14 +12,13 @@ A live, fast, professional site where Rasmus can showcase his work and keep publ
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Blog with git-based MDX posts and tag navigation — Validated in Phase 2: Blog & Content System (UAT approved 2026-07-14; 3 real posts live, Velite pipeline, syntax highlighting, related posts, homepage teaser; SEO metadata portion remains in Phase 3)
 
 ### Active
 
 - [ ] Homepage that introduces Rasmus and the site's story/brand
 - [ ] About page covering his background as a developer, aikidoka, and investor
 - [ ] Projects page showcasing software, SaaS, and open-source work
-- [ ] Blog with git-based MDX posts, categories/tags, and SEO metadata
 - [ ] Contact page with mailto link and social profile links
 - [ ] Responsive design across devices
 - [ ] SEO foundation (meta tags, sitemap, OG images)
@@ -80,4 +79,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-07-10 after initialization*
+*Last updated: 2026-07-14 after Phase 2 (Blog & Content System) completion*
