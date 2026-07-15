@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-07-10)
 Phase: 3 (SEO Foundation & Launch) — EXECUTING
 Plan: 1 of 7
 Status: Executing Phase 3
-Last activity: 2026-07-14 -- Phase 3 execution started
+Last activity: 2026-07-15 - Completed quick task 260715-ho0: Remove seed blog posts
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -80,6 +80,7 @@ None yet.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 260713-wam | Atmospheric hero: full-bleed Background.jpg with dark ink dim overlay (approved spec) | 2026-07-13 | b4f5031 | [260713-wam-implement-approved-atmospheric-hero-desi](./quick/260713-wam-implement-approved-atmospheric-hero-desi/) |
+| 260715-ho0 | Remove seed blog posts | 2026-07-15 | 997938b | [260715-ho0-remove-seed-blog-posts](./quick/260715-ho0-remove-seed-blog-posts/) |
 
 ## Deferred Items
 
