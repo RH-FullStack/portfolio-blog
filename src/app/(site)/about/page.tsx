@@ -35,7 +35,7 @@ export default function About() {
         </p>
         <p>
           The aikido thread is where I learned what patience under pressure actually looks like.
-          I trained under the late sensei Shoji Nishio, and the discipline of the mat — showing
+          I train under Mark Jewkes (6th dan Aikido, 4th dan Iaido), and the discipline of the mat — showing
           up, falling, getting back up, refining the same technique for years — turned out to be
           the same discipline that ships software and holds an investment thesis for a decade.
           My first trip to Japan wasn&apos;t a vacation; it was an international Aikido seminar
