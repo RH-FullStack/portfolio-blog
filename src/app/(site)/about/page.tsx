@@ -38,9 +38,10 @@ export default function About() {
           I train under Mark Jewkes (6th dan Aikido, 4th dan Iaido), and the discipline of the mat — showing
           up, falling, getting back up, refining the same technique for years — turned out to be
           the same discipline that ships software and holds an investment thesis for a decade.
-          My first trip to Japan wasn&apos;t a vacation; it was an international Aikido seminar
-          with eight training partners, and it&apos;s the trip that made &quot;living there part
-          of the year&quot; feel less like a daydream and more like a plan with a budget.
+          This November I&apos;ll make my first trip to Japan — not a vacation, but an
+          international Aikido seminar where eight of us from my dojo will join practitioners
+          from all over the world, and it&apos;s already turning &quot;living there part of the
+          year&quot; from a daydream into a plan with a budget.
         </p>
         <p>
           The investor thread is the part most people don&apos;t see. I started investing at 30,
