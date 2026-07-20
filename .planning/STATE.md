@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-07-10)
 Phase: 3 (SEO Foundation & Launch) — EXECUTING
 Plan: 1 of 7
 Status: Executing Phase 3
-Last activity: 2026-07-16 - Completed quick task 260716-ebk: Add first real blog post: why-i-chose-aikido
+Last activity: 2026-07-20 - Completed quick task 260720-bxr: Fix false Nishio training claim on About page
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -82,6 +82,7 @@ None yet.
 | 260713-wam | Atmospheric hero: full-bleed Background.jpg with dark ink dim overlay (approved spec) | 2026-07-13 | b4f5031 | [260713-wam-implement-approved-atmospheric-hero-desi](./quick/260713-wam-implement-approved-atmospheric-hero-desi/) |
 | 260715-ho0 | Remove seed blog posts | 2026-07-15 | 997938b | [260715-ho0-remove-seed-blog-posts](./quick/260715-ho0-remove-seed-blog-posts/) |
 | 260716-ebk | Add first real blog post: why-i-chose-aikido | 2026-07-16 | bb5e48f | [260716-ebk-add-first-real-blog-post-why-i-chose-aik](./quick/260716-ebk-add-first-real-blog-post-why-i-chose-aik/) |
+| 260720-bxr | Fix false Nishio training claim on About page | 2026-07-20 | bbc563a | [260720-bxr-fix-false-nishio-training-claim-on-about](./quick/260720-bxr-fix-false-nishio-training-claim-on-about/) |
 
 ## Deferred Items
 
