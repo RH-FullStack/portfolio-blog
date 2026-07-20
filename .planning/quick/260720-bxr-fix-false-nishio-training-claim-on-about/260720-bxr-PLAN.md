@@ -34,8 +34,8 @@ Output: Updated `src/app/(site)/about/page.tsx` with the accurate sensei stateme
 </objective>
 
 <execution_context>
-@$HOME/.claude-account-b-account-b/get-shit-done/workflows/execute-plan.md
-@$HOME/.claude-account-b-account-b/get-shit-done/templates/summary.md
+@$HOME/.claude-account-b/get-shit-done/workflows/execute-plan.md
+@$HOME/.claude-account-b/get-shit-done/templates/summary.md
 </execution_context>
 
 <context>
