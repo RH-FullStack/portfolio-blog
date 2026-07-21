@@ -68,7 +68,13 @@ export default function Home() {
 
       <Container className="py-16 sm:py-24">
         <h2 className="text-heading font-semibold">Featured Projects</h2>
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          className={
+            FEATURED_PROJECTS.length === 1
+              ? 'mt-12 grid grid-cols-1 gap-8 max-w-md'
+              : 'mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'
+          }
+        >
           {FEATURED_PROJECTS.map((project) => (
             <Card key={project.slug} project={project} />
           ))}
