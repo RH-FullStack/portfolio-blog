@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-07-10)
 Phase: 3 (SEO Foundation & Launch) — EXECUTING
 Plan: 1 of 7
 Status: Executing Phase 3
-Last activity: 2026-07-20 - Completed quick task 260720-c33: Fix Japan trip tense and seminar size claim on About page
+Last activity: 2026-07-21 - Completed quick task 260721-hpn: Remove unfinished placeholder projects, keep only RasmusOS
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -84,6 +84,7 @@ None yet.
 | 260716-ebk | Add first real blog post: why-i-chose-aikido | 2026-07-16 | bb5e48f | [260716-ebk-add-first-real-blog-post-why-i-chose-aik](./quick/260716-ebk-add-first-real-blog-post-why-i-chose-aik/) |
 | 260720-bxr | Fix false Nishio training claim on About page | 2026-07-20 | bbc563a | [260720-bxr-fix-false-nishio-training-claim-on-about](./quick/260720-bxr-fix-false-nishio-training-claim-on-about/) |
 | 260720-c33 | Fix Japan trip tense and seminar size claim on About page | 2026-07-20 | 03cbb1d | [260720-c33-fix-japan-trip-tense-and-seminar-size-cl](./quick/260720-c33-fix-japan-trip-tense-and-seminar-size-cl/) |
+| 260721-hpn | Remove unfinished placeholder projects, keep only RasmusOS | 2026-07-21 | 59d9af5 | [260721-hpn-remove-unfinished-placeholder-projects-k](./quick/260721-hpn-remove-unfinished-placeholder-projects-k/) |
 
 ## Deferred Items
 
