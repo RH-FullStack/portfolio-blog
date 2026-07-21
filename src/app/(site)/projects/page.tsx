@@ -22,7 +22,13 @@ export default function ProjectsPage() {
         A curated selection of things I&apos;ve built — from personal tools to open-source
         experiments.
       </p>
-      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
+      <div
+        className={
+          projects.length === 1
+            ? 'mt-12 grid grid-cols-1 gap-8 max-w-md'
+            : 'mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2'
+        }
+      >
         {projects.map((project) => (
           <Card key={project.slug} project={project} />
         ))}
