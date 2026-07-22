@@ -26,7 +26,7 @@ export async function generateMetadata({
   const { tag } = await params;
   return {
     title: `Posts tagged "${tag}"`,
-    description: `Posts tagged "${tag}" — writing on software, aikido, and long-term investing.`,
+    description: `Posts tagged "${tag}" — writing on software and aikido.`,
   };
 }
 

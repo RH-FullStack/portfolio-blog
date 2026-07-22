@@ -6,7 +6,7 @@ import { getAllPosts } from '@/lib/posts';
 export const metadata: Metadata = {
   title: 'Blog',
   description:
-    'Writing by Rasmus Hansen on software development, aikido, long-term investing, and the craft of building things that last.',
+    'Writing by Rasmus Hansen on software development, aikido, and the craft of building things that last.',
 };
 
 /**
@@ -22,8 +22,7 @@ export default function BlogPage() {
     <Container className="py-16 sm:py-24">
       <h1 className="text-heading font-semibold sm:text-display">Blog</h1>
       <p className="mt-4 max-w-2xl text-body">
-        Writing on software, aikido, and long-term investing — the compounding threads toward
-        Japan.
+        Writing on software and aikido — the compounding threads toward Japan.
       </p>
       {posts.length === 0 ? (
         <div className="mt-12">

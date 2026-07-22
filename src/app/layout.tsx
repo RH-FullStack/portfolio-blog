@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'Rasmus Hansen — Software Developer',
   },
   description:
-    'Rasmus Hansen — software developer, aikidoka, and long-term investor. Projects and writing on building toward a life split between Denmark and Japan.',
+    'Rasmus Hansen — software developer and aikidoka. Projects and writing on building toward a life split between Denmark and Japan.',
   openGraph: {
     type: 'website',
     siteName: 'Rasmus Hansen',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       default: 'Rasmus Hansen — Software Developer',
     },
     description:
-      'Rasmus Hansen — software developer, aikidoka, and long-term investor. Projects and writing on building toward a life split between Denmark and Japan.',
+      'Rasmus Hansen — software developer and aikidoka. Projects and writing on building toward a life split between Denmark and Japan.',
   },
   twitter: {
     card: 'summary_large_image',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       default: 'Rasmus Hansen — Software Developer',
     },
     description:
-      'Rasmus Hansen — software developer, aikidoka, and long-term investor. Projects and writing on building toward a life split between Denmark and Japan.',
+      'Rasmus Hansen — software developer and aikidoka. Projects and writing on building toward a life split between Denmark and Japan.',
   },
 };
 
