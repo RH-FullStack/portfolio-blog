@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/site-config';
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Get in touch with Rasmus Hansen — email and social links for work, collaboration, or a conversation about code, aikido, or investing.',
+    'Get in touch with Rasmus Hansen — email and social links for work, collaboration, or a conversation about code or aikido.',
 };
 
 /**

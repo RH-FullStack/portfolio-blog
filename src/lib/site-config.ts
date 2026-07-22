@@ -7,7 +7,7 @@
  */
 export const siteConfig = {
   name: 'RasmusOS',
-  tagline: 'Developer, aikidoka, investor, discgolf pro.',
+  tagline: 'Developer, aikidoka, discgolf pro.',
   role: 'Software developer building his way toward a life split between Denmark and Japan.',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
   nav: [

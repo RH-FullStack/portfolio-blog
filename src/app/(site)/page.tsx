@@ -13,7 +13,7 @@ const LATEST_POSTS = getAllPosts().slice(0, 3);
 
 export const metadata: Metadata = {
   description:
-    "Software developer, aikidoka, and long-term investor building toward a life split between Denmark and Japan — explore Rasmus Hansen's projects and writing.",
+    "Software developer and aikidoka building toward a life split between Denmark and Japan — explore Rasmus Hansen's projects and writing.",
 };
 
 /**
