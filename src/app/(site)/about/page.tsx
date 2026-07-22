@@ -6,13 +6,13 @@ import { siteConfig } from '@/lib/site-config';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'The story behind Rasmus Hansen — how software development, aikido, and long-term investing braid into one path toward a life split between Denmark and Japan.',
+    'The story behind Rasmus Hansen — how software development and aikido braid into one path toward a life split between Denmark and Japan.',
 };
 
 /**
- * About page (Server Component) — the developer, aikidoka, and long-term
- * investor threads told as ONE coherent story (CORE-02), not three siloed
- * sections, woven around the Japan/freedom throughline from PROJECT.md.
+ * About page (Server Component) — the developer and aikidoka threads told
+ * as ONE coherent story (CORE-02), not two siloed sections, woven around
+ * the Japan/freedom throughline from PROJECT.md.
  * Static typed prose — no content pipeline needed for Phase 1.
  */
 export default function About() {
@@ -37,26 +37,17 @@ export default function About() {
           The aikido thread is where I learned what patience under pressure actually looks like.
           I train under Mark Jewkes (6th dan Aikido, 4th dan Iaido), and the discipline of the mat — showing
           up, falling, getting back up, refining the same technique for years — turned out to be
-          the same discipline that ships software and holds an investment thesis for a decade.
+          the same discipline it takes to actually finish something in code, not just start it.
           This November I&apos;ll make my first trip to Japan — not a vacation, but an
           international Aikido seminar where eight of us from my dojo will join practitioners
           from all over the world, and it&apos;s already turning &quot;living there part of the
           year&quot; from a daydream into a plan with a budget.
         </p>
         <p>
-          The investor thread is the part most people don&apos;t see. I started investing at 30,
-          later than I&apos;d have liked, which is exactly why I care about it: long-term,
-          unglamorous, compounding capital toward a concrete goal — a 1M DKK portfolio — is the
-          financial version of the same patience aikido taught me on the mat. It&apos;s what
-          turns &quot;I&apos;d like to split my life between Denmark and Japan&quot; from a wish
-          into a number I can actually track.
-        </p>
-        <p>
-          None of these are side projects to each other. The code funds the trips, the mat
-          teaches the patience the code and the portfolio both need, and the portfolio buys back
-          the time to keep doing all three. This site is where I write that story down as it
-          happens — the wins, the failed experiments, and the slow, compounding progress toward
-          Japan.
+          These aren&apos;t side projects to each other. The code funds the trips, and the mat
+          teaches the patience the code needs to actually ship. This site is where I write that
+          story down as it happens — the wins, the failed experiments, and the slow, compounding
+          progress toward Japan.
         </p>
       </Prose>
     </Container>
